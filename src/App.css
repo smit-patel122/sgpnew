@@ -1,38 +1,211 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.background {
+  height: 100%;
+  background-color: #c5f2f7;
+}
+
+.homepage-img {
+  position: relative;
+  margin-top: 100px;
+  height: 210px;
+  width: 300px;
+}
+.what-we-do {
+  margin: 4rem 4rem;
+  padding: 2rem 1.25rem;
+  background-color: #b5ebebe9;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.heading-what-we-do {
+  margin-bottom: 0.75rem;
+}
+
+.wwd01 {
+  width: 25%;
+  height: 200px;
+  color: var(--heading);
+}
+
+.wwd02 {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--heading);
+}
+.heading-what-we-do {
+  color: var(--heading);
+}
+.wwd02 i {
+  margin: 1rem 0rem;
+}
+
+.wwd02 i:hover {
+  color: var(--helper);
+}
+
+.wwd02 h4 {
+  margin: 0.5rem 0rem 1.5rem 0rem;
+}
+
+.wwd02 p {
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+  font-size: 14px;
+}
+
+.group {
+  flex: 1;
+  margin: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wwd02-icons {
+  font-size: 3rem;
+  color: #727272;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-name {
+  
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 2rem 7.25rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.app-name h2 {
+  margin-top: 1rem;
+  color: var(--helper-tint);
+}
+
+.app-name p {
+  margin: 1rem 0rem;
+  color: #f0f0f0;
+}
+
+.app-name-about:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.app-name-btn {
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  padding: 0.95em 1.97em;
+  background-color: transparent;
+  border: 1px solid WHITE;
+  border-radius: 30px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app-name-btn:hover {
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: white;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* TOP DIV */
+
+.container-top {
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.content {
+  color: var(--heading);
+  padding: 90px 40px;
+}
+
+.heading-top {
+  font-size: 2.9rem;
+  margin: 0px 0px 30px 0px;
+}
+
+.info-top {
+  font-size: 1.2rem;
+  margin: 0px 0px 30px 0px;
+  line-height: 1.5;
+}
+
+.top-btn {
+  display: inline-block;
+  padding: 0.95em 1.97em;
+  margin: 0 0.1em 0.1em 0;
+  background-color: var(--helper);
+  border: none;
+  border-radius: 30px;
+  color: white;
+}
+
+.top-btn:hover {
+  background-color: var(--heading);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  cursor: pointer;
+}
+
+.top-btn1 {
+  display: inline-block;
+  padding: 0.95em 1.97em;
+  margin: 0 0.1em 0.1em 1rem;
+  background-color: transparent;
+  border: 1px solid var(--helper);
+  border-radius: 30px;
+  color: var(--helper);
+}
+
+.top-btn1:hover {
+  color: var(--heading);
+  cursor: pointer;
+  border: 1px solid var(--heading);
+}
+
+/* RegistrationForm.css */
+
+h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label,
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
 }

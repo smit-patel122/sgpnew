@@ -1,0 +1,210 @@
+.box_container{
+    display: flex;
+    }
+    .box{
+    position: relative;
+    width:380px;
+    height:500px;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: inset 0 -4em 4em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    }
+    .box::before{
+     content: "";
+     position: absolute;
+     top: -50%;
+     left: -50%;
+     width:380px;
+     height:420px;
+     background: linear-gradient(0deg,transparent,
+     transparent,#582a40,#582a40,#582a40);
+     z-index: 1;
+     animation: animate5 6s linear infinite;
+     transform-origin: bottom right;
+     animation-delay: -3s;
+    }
+    .box::after{
+     content: "";
+     position: absolute;
+     top:-50%;
+     left: -50%;
+     width:380px;
+     height:420px;
+     background: linear-gradient(0deg,transparent,
+     transparent,#e5825e,#e5825e,#e5825e);
+     z-index: 1;
+     animation: animate5 6s linear infinite;
+     transform-origin: bottom right;
+    }
+    @keyframes animate5{
+     0%{
+         transform:rotate(0deg)
+     }
+     100%{
+         transform: rotate(360deg);
+     }
+    }
+    .box form{
+     position: absolute;
+     inset: 4px;
+     background: rgb(255, 255, 255);
+     padding: 50px 40px;
+     border-radius: 10px;
+     z-index: 2;
+     box-shadow: inset 0 -4em 4em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+      0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    }
+    
+    
+    .box h1{
+     margin-bottom: 30px;
+     color: rgb(55, 54, 54);
+     text-align: center;
+     text-transform: capitalize;
+    }
+    .box .inputbox{
+     position: relative;
+    }
+    .box .inputbox input{
+     width: 100%;
+     padding: 10px;
+     font-size: 16px;
+     color: rgb(55, 54, 54);
+     letter-spacing: 1px;
+     margin-bottom: 30px;
+     border: none;
+     border-bottom: 1px solid rgb(55, 54, 54);
+     background: transparent;
+     outline: none;
+    }
+    
+    
+    .box .inputbox label{
+     position: absolute;
+     top: 0;
+     left: 0;
+     letter-spacing: 1px;
+     padding: 10px 0;
+     font-size: 16px;
+     color:rgb(55, 54, 54);
+     transition: 0.5s;
+    }
+    
+    .box .inputbox input:focus~label,
+    .box .inputbox input:valid~label{
+     top: -20px;
+     left: 0;
+     color: #03a9f4;
+     font-size: 12px;
+    }
+    .box input[type="submit"]{
+     background: transparent;
+     border: none;
+     outline: none;
+     color: white;
+     background: #03a9f4;
+     padding: 8px 16px;
+     border-radius: 5px;
+     font-size: 14px;
+    }
+    
+    .box_container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .form1{
+    width: 300px;
+    height: 498px;
+    background:  rgb(255, 255, 255);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: inset 0 -4em 4em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3); 
+    animation: animate 0.3s linear forwards;
+    }
+    .box1{
+    animation: animate1 0.3s linear forwards;
+    }
+    @keyframes animate {
+    0%{
+      transform : translateX(300px);
+    }
+    100%{
+      transform : translateX(0px);
+    
+    }
+    }
+    @keyframes animate1 {
+    0%{
+      transform : translateX(-300px);
+    }
+    100%{
+      transform : translateX(0px);
+    
+    }
+    }
+    .form2{
+    width: 300px;
+    height: 498px;
+    background:  rgb(255, 255, 255);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: inset 0 -4em 4em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3); 
+    animation: animate3 0.3s linear forwards;
+    
+    }
+    @keyframes animate3 {
+    0%{
+      transform : translateX(-300px);
+    }
+    100%{
+      transform : translateX(2px);
+    
+    }
+    }
+    .box2{
+    animation: animate4 0.3s linear forwards;
+    }
+    @keyframes animate4 {
+    0%{
+      transform : translateX(300px);
+    }
+    100%{
+      transform : translateX(0px);
+    
+    }
+    }
+    .form_op img{
+    width: 250px;
+    border-radius: 20px;
+    margin: 20px;
+    }
+    
+    .form_op h3{
+    margin-top: 30px;
+    text-align: center;
+    }
+    .form_op button{
+     border: none;
+     outline: none;
+     color: white;
+     background: #03a9f4;
+     padding: 8px 16px;
+     border-radius: 5px;
+     font-size: 14px;
+    }
+    .btn_container{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    
+    

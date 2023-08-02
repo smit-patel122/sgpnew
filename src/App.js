@@ -1,24 +1,38 @@
-import logo from './logo.svg';
+
+import NavBar from './components/NavBar'; // Adjust the path accordingly
+
+
+import { BrowserRouter as Router,  Route, Routes } from "react-router-dom";
+import { Home } from "./components/Pages/Home";
+import { About } from "./components/Pages/About";
+import { Blog } from "./components/Pages/Blog";
+import { Contact } from "./components/Pages/Contact";
+import Donation from "./components/Pages/Donation";
+import Sign_in from './components/Pages/Sign_in';
+import Sign_up from './components/Pages/Sign_up';
+import  Admin from "./components/Pages/Admin";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className='background'>
+      <Router>
+        <NavBar />
+
+        <div className="pages">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/Donation" element={<Donation />} />
+            <Route path="/Admin" element={<Admin />} />
+            <Route path="/signin" element={<Sign_in />} />
+            <Route path="/signup" element={<Sign_up />} />
+          </Routes>
+        </div>
+      </Router>
+  </div>
   );
 }
 
