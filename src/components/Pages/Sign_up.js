@@ -39,7 +39,7 @@ export default function Sign_up() {
                 autoComplete="off"
                 required
               />
-              <label>Username new:</label>
+              <label>Username</label>
             </div>
             <div className="inputbox">
               <input

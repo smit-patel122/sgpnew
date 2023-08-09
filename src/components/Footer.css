@@ -1,0 +1,43 @@
+.footer {
+    background-color: #479ea8;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
+  
+  .logo {
+    color: green;
+    margin-top: -50px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 0 15px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+

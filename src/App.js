@@ -12,6 +12,8 @@ import Sign_in from './components/Pages/Sign_in';
 import Sign_up from './components/Pages/Sign_up';
 import  Admin from "./components/Pages/Admin";
 import './App.css';
+import Footer from './components/Footer';
+import Avaible_medi from './components/Pages/Avaible_medi';
 
 function App() {
   return (
@@ -30,8 +32,11 @@ function App() {
             <Route path="/Admin" element={<Admin />} />
             <Route path="/signin" element={<Sign_in />} />
             <Route path="/signup" element={<Sign_up />} />
+            <Route path="/Avaible_medi" element={<Avaible_medi />} />
           </Routes>
+          <Footer/>
         </div>
+       
       </Router>
   </div>
   );

@@ -10,8 +10,7 @@ export const Home = () => {
         <div className="content" data-aos="fade-left">
           <h1 className="heading-top">MAKE GOOD THINGS TOGETHER</h1>
           <p className="info-top">A non-governmental organization, or NGO, typically is established to work toward public or social welfare goals. For instance, an NGO could focus on human rights, voters' rights, healthcare, helping the poor, and preventing cruelty to animals. NGOs can be funded by donations and grants.</p>
-          <button className="top-btn">Become A Member</button>
-          <button className="top-btn1">Learn More</button>
+          
         </div>
       </div>
       <div className="what-we-do" data-aos="fade-up"
