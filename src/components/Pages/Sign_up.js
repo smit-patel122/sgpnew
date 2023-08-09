@@ -39,7 +39,7 @@ export default function Sign_up() {
                 autoComplete="off"
                 required
               />
-              <label>Username</label>
+              <label>Username new:</label>
             </div>
             <div className="inputbox">
               <input
@@ -70,7 +70,7 @@ export default function Sign_up() {
             </h4>
             {error && (
               <div style={{ color: "red", marginTop: "10px" }}>
-                Username or Email already exists
+                Username or Email already exists 
               </div>
             )}
           </form>

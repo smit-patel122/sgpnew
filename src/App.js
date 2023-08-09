@@ -18,6 +18,7 @@ function App() {
     <div className='background'>
       <Router>
         <NavBar />
+        
 
         <div className="pages">
           <Routes>
