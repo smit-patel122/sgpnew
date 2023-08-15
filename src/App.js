@@ -6,7 +6,7 @@ import { BrowserRouter as Router,  Route, Routes } from "react-router-dom";
 import { Home } from "./components/Pages/Home";
 import { About } from "./components/Pages/About";
 import { Blog } from "./components/Pages/Blog";
-import { Contact } from "./components/Pages/Contact";
+import  Contact  from "./components/Pages/Contact";
 import Donation from "./components/Pages/Donation";
 import Sign_in from './components/Pages/Sign_in';
 import Sign_up from './components/Pages/Sign_up';

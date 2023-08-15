@@ -31,7 +31,7 @@ export default function Sign_up() {
           <form onSubmit={handleSubmit}>
             <h1>Registration form</h1>
             <div className="inputbox">
-              <input
+            Username<input
                 type="text"
                 name="username"
                 value={username}
@@ -39,10 +39,10 @@ export default function Sign_up() {
                 autoComplete="off"
                 required
               />
-              <label>Username</label>
+           
             </div>
             <div className="inputbox">
-              <input
+            Email ID<input
                 type="text"
                 name="email"
                 value={email}
@@ -50,10 +50,10 @@ export default function Sign_up() {
                 autoComplete="off"
                 required
               />
-              <label>Email ID</label>
+              
             </div>
             <div className="inputbox">
-              <input
+            Password<input
                 type="password"
                 name="password"
                 value={password}
@@ -61,13 +61,12 @@ export default function Sign_up() {
                 autoComplete="off"
                 required
               />
-              <label>Password</label>
+             
             </div>
 
             <input type="submit" value="SignUp" />
-            <h4 className="noacount">
-              Already have an account?<NavLink to="/signin">Login</NavLink>{" "}
-            </h4>
+            <NavLink to="/signin" className="login-link">Already have an account? Login</NavLink>
+
             {error && (
               <div style={{ color: "red", marginTop: "10px" }}>
                 Username or Email already exists 

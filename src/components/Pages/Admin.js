@@ -19,7 +19,7 @@ const Admin = () => {
             <form action="" onSubmit={submitThis}>
               <h1> Admin Login form</h1>
               <div className="inputbox">
-                <input
+              Email<input
                   type="text"
                   name="email"
                   autoComplete="off"
@@ -28,10 +28,10 @@ const Admin = () => {
                   required
                  
                 />
-                <label>Email</label>
+              
               </div>
               <div className="inputbox">
-                <input
+              Password<input
                   type="password"
                   name="password"
                   autoComplete="off"
@@ -40,7 +40,7 @@ const Admin = () => {
                  value={passw} onChange={(e)=>setPassw(e.target.value)}
                  required
                 />
-                <label>Password</label>
+                
               </div>
               <input type="submit" value="Login" />
               </form>

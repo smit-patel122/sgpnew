@@ -4,7 +4,7 @@
     .box{
     position: relative;
     width:380px;
-    height:500px;
+    height:550px;
     background: rgb(0, 0, 0);
     border-radius: 10px;
     overflow: hidden; 
@@ -79,6 +79,19 @@
      background: transparent;
      outline: none;
     }
+    .signup-link {
+      color: #03a9f4;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .login-link {
+      color: #03a9f4;
+      text-decoration: underline;
+      cursor: pointer;
+      display: inline-block; /* Ensures proper styling even without h4 */
+      margin-top: 10px; /* Add some spacing */
+    }
+    
     
     
     .box .inputbox label{

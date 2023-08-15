@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
+
 
 
 import "./Sign_in.css";
@@ -20,7 +21,8 @@ const Sign_in = () => {
             <form action="" onSubmit={submitThis}>
               <h1>Login form</h1>
               <div className="inputbox">
-                <input
+            
+               Email <input
                   type="text"
                   name="email"
                   autoComplete="off"
@@ -29,10 +31,11 @@ const Sign_in = () => {
                   required
                  
                 />
-                <label>Email</label>
+                
               </div>
               <div className="inputbox">
-                <input
+            
+                Password:<input
                   type="password"
                   name="password"
                   autoComplete="off"
@@ -41,11 +44,16 @@ const Sign_in = () => {
                  value={passw} onChange={(e)=>setPassw(e.target.value)}
                  required
                 />
-                <label>Password</label>
+               
               </div>
-              <h4 className='noacount'>  <NavLink to="/Admin">Admin Login</NavLink></h4>
-              <input type="submit" value="Login" />
-              <h4 className='noacount'>Don't have an account?  <NavLink to="/signup">Sign up</NavLink></h4>
+              <h4 className='noacount'>
+  <NavLink to="/Admin" style={{ textDecoration: 'none', color: '#03a9f4' }}>
+    Admin Login
+  </NavLink>
+</h4>
+<input type="submit" value="Login" />
+<NavLink to="/signup" className="signup-link">Don't have an account? Sign up</NavLink>
+
               
              
             </form>
